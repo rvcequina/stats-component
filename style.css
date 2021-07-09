@@ -37,21 +37,25 @@ body{
     background-color: var(--card-bg-color);
     border-radius: 5px;
     overflow: hidden;
-    min-width: 275px;
+    height: 100%;
+    min-width: 25px;
+    min-height: 600px;
     display:flex;
     flex-direction: column;
-    margin:auto 20px;
+    margin:20% 5%;
      
 }
 .img-container{
     position:relative;
-    height: 210px;
+    height: 30%;
     width:100%;
-    overflow: hidden;
-   background:  url('./img/image-header-mobile.jpg') no-repeat ;
+    min-width:200px;
+   background:  url('./img/image-header-mobile.jpg') no-repeat center;
    background-size: cover;
   filter: invert(5%) sepia(80%) saturate(500%) hue-rotate(233deg) brightness(98%) contrast(90%) opacity(90%);
 }
+
+
 .img-container:before{
     content: ' ';
     position: absolute;
@@ -62,7 +66,6 @@ body{
     background-color: hsla(270, 6%, 6%, .50);
 }
 
-
 em{
     font-style: normal;
     color:var(--accent);
@@ -70,6 +73,7 @@ em{
 
 .content{
     display: flex;
+    height: 55%;
     flex-direction: column;
     align-content: center;
     text-align: center;
@@ -106,7 +110,7 @@ flex-direction: column;
     font-weight: 200;
     text-transform: uppercase
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 652px) {
     body{
         display:flex;
         padding:10%;
@@ -117,12 +121,13 @@ flex-direction: column;
         width: 100%;
         margin: auto;
         max-height: 400px;
-       
+        min-height: 200px;
        
     }
     .img-container{
     height: auto;
     width:50%;
+    
     max-height: 400px;
     background: url('./img/image-header-desktop.jpg') no-repeat center;
     background-size: cover;
